@@ -83,15 +83,53 @@ body {
     background-image: url(./../multimedia/galaxia.gif);
 }
 
+.mirror {
+    background: rgba(209, 206, 206, 0.137);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 2px);
+    -webkit-backdrop-filter: blur( 2px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    text-align: center;
+    width: 400px;
+    align-self: center;
+}
+
+.shadow {
+    text-shadow: 1px 1px 0 rgba(255, 253, 253, 0.322);
+    color: rgb(66, 29, 99);
+}
+
+.flexcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fill:hover,
+.fill:focus {
+    box-shadow: inset 0 0 0 2em rgb(115, 52, 173);
+    color: #ffffff;
+    transition: 0.25s
+}
+
+.fill {
+    border-color: rgb(115, 52, 173);
+    background: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
 
 /* FOOTER */
 
 .footer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     font-size: 12px;
-    color: white
+    color: white;
 }
 
 
@@ -356,7 +394,6 @@ button {
     height: 40px;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -366,19 +403,20 @@ button {
     display: inline-block;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
+    background-color: #ad76f5;
 }
 
 .btn-4 {
-    background-color: #4dccc6;
-    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    background-color: #ad76f5;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #ae8ae9 74%);
     line-height: 42px;
-    padding: 0;
+    padding: 5px;
     border: none;
 }
 
 .btn-4:hover {
-    background-color: #89d8d3;
-    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    background-color: #ad76f5;
+    background-image: linear-gradient(315deg, #ae8ae9 0%, #4dccc6 74%);
 }
 
 .btn-4 span {
@@ -635,4 +673,25 @@ button {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+.centrados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #cae2de6b;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.colorcard {
+    background-color: rgba(209, 206, 206, 0.137) !important;
+    color: white;
 }
