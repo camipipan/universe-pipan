@@ -34,6 +34,16 @@
     font-size: 30px;
 }
 
+.menuestilo {
+    color: white;
+    text-decoration: none;
+}
+
+.menuestilo:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .lista:hover {
     background-color: rgba(161, 82, 235, 0.596);
     transform: translateX(5px);
