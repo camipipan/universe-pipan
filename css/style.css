@@ -726,9 +726,21 @@ button {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
+    text-align: end;
+}
+
+.centrar img {
+    width: 300px;
+    height: 300px;
 }
 
 .colorcard {
     background-color: rgba(209, 206, 206, 0.137) !important;
     color: white;
+}
+
+.tamaño {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
 }
