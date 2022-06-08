@@ -1,0 +1,22 @@
+.astrologia {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 120px 120px 120px 120px;
+  gap: 10px; }
+  .astrologiasimbolo {
+    width: 60px;
+    align-self: center; }
+
+.astrologia__signos {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 5px; }
+  .astrologia__signos:hover {
+    transform: translateX(5px); }
+
+.astrologia__simbolo {
+  width: 60px;
+  align-self: center; }
