@@ -1,74 +1,19 @@
-.astrologia {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 120px 120px 120px 120px;
-    gap: 10px;
-    &simbolo {
-        width: 60px;
-        align-self: center;
-    }
-    &signos {
-        color: black;
-        text-align: center;
-        font-family: 'Montserrat Alternates', sans-serif;
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        &:hover {
-            transform: translateX(5px);
-        }
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
 
+/*IMPORT MISC*/
 
-/*
-.signos {
-    &:nth-of-type(1) {
-        background-image: linear-gradient(to bottom right, #cfcbd2ab, #cb98edab, #8b63daab, #3c21b7ab);
-        border-radius: 20px;
-    }
-    &:nth-of-type(2) {
-        background-image: linear-gradient(to bottom right, rgba(111, 36, 161, 0.603), rgba(185, 159, 184, 0.603));
-        border-radius: 20px
-    }
-    &:nth-of-type(3) {
-        background-image: linear-gradient(to bottom right, rgba(100, 197, 236, 0.603), rgba(218, 88, 212, 0.603));
-        border-radius: 20px
-    }
-    &:nth-of-type(4) {
-        background-image: linear-gradient(to bottom right, #abf8e7ab, #8678c7ab);
-        border-radius: 20px
-    }
-    &:nth-of-type(5) {
-        background-image: linear-gradient(to bottom right, #6d678eab, #f6b5ccab);
-        border-radius: 20px
-    }
-    &:nth-of-type(6) {
-        background-image: linear-gradient(to bottom right, #a8c0edab, #221185ab);
-        border-radius: 20px
-    }
-    &:nth-of-type(7) {
-        background-image: linear-gradient(to bottom right, #0c7bb3ab, #f2bae8ab);
-        border-radius: 20px
-    }
-    &:nth-of-type(8) {
-        background-image: linear-gradient(to bottom right, #c0d5fbab, #fa5eb4ab);
-        border-radius: 20px
-    }
-    &:nth-of-type(9) {
-        background-image: linear-gradient(to bottom right, #9fa5d5ab, #a0f1eaab);
-        border-radius: 20px
-    }
-    &:nth-of-type(10) {
-        background-image: linear-gradient(to bottom right, #f4c4ecab, #6cc6cbab);
-        border-radius: 20px
-    }
-    &:nth-of-type(11) {
-        background-image: linear-gradient(to bottom right, #fec9c9ab, #6d678eab);
-        border-radius: 20px
-    }
-    &:nth-of-type(12) {
-        background-image: linear-gradient(to bottom right, #38a2d7ab, rgba(133, 45, 133, 0.623));
-        border-radius: 20px
-    }
-} */
+@import './misc/normalize.scss';
+@import './misc/animations.scss';
+@import './misc/responsive.scss';
+
+/*IMPORTS PARTIALS*/
+
+@import './partials/header.scss';
+@import './partials/footer.scss';
+
+/*IMPORTS PAGES*/
+
+@import './pages/astrologia.scss';
+@import './pages/planetas.scss';
+@import './pages/tarot.scss';
+@import './pages/cartanatal.scss';

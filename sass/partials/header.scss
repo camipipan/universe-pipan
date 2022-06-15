@@ -1,0 +1,40 @@
+/* logo */
+
+.logo {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 100%;
+}
+
+.centrarlogo {
+    text-align: center;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+}
+
+.menu__estilo {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.menu__lista {
+    &:hover {
+        background-color: rgba(161, 82, 235, 0.596);
+        transform: translateX(5px);
+    }
+}

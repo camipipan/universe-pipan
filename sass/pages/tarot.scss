@@ -1,0 +1,15 @@
+/* PAGINA TAROT */
+
+.gridcartas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gridcartas__cartas {
+    background-image: linear-gradient(to bottom right, #bea7c79c, #776aafab);
+    height: 400px;
+    border-radius: 20px;
+}
