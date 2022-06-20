@@ -14,18 +14,14 @@
 /* MENU */
 
 .menu {
-    @include flex(row, space-evenly, 0px);
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: space-evenly;
-    //align-items: center;
+    @include flex(row, space-evenly, center, 1px);
     list-style: none;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: $small;
 }
 
 .menu__estilo {
-    color: $primary;
+    color: map-get($colors, primary);
     text-decoration: none;
     &:hover {
         text-decoration: none;
@@ -38,4 +34,9 @@
         background-color: rgba(161, 82, 235, 0.596);
         transform: translateX(5px);
     }
+}
+
+.scale-in-center {
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

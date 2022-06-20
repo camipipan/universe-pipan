@@ -105,3 +105,12 @@
         animation: rotate-center 40s;
     }
 }
+
+.centrados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #cae2de6b;
+    border-radius: 20px;
+    margin: 0 auto;
+}

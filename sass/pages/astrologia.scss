@@ -6,23 +6,31 @@
     grid-template-rows: 120px 120px 120px 120px;
     gap: 10px;
     &signos {
-        color: $opcional;
+        color: black;
         text-align: center;
         font-family: 'Montserrat Alternates', sans-serif;
         display: flex;
         flex-direction: column;
         padding: 5px;
+        justify-content: center;
         &:hover {
             transform: translateX(5px);
         }
     }
-    &simbolo {
-        width: 60px;
-        align-self: center;
-    }
+}
+
+.astrologia__simbolo {
+    width: 60px;
+    align-self: center;
 }
 
 .astrologia__signos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
     &:nth-of-type(1) {
         background-image: linear-gradient(to bottom right, #cfcbd2ab, #cb98edab, #8b63daab, #3c21b7ab);
         border-radius: 20px;

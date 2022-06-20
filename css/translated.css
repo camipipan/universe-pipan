@@ -1,9 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap");
 /*IMPORT MISC*/
-/*body {
-    background-image: url(./../../multimedia/galaxia.gif);
-}
-*/
 button {
   margin: 20px; }
 
@@ -82,6 +79,95 @@ button {
     width: 0%;
     height: .1px; }
 
+.titulo {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #a152eb; }
+
+.subtitulo {
+  font-size: 20px;
+  text-align: center;
+  color: white; }
+
+.colortema {
+  font-size: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #a152eb;
+  text-align: center; }
+
+.colorparrafo {
+  font-size: 15px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: white;
+  text-align: center; }
+
+.mirror {
+  box-shadow: 0 8px 32px 0 grey;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid grey;
+  text-align: center;
+  width: 400px;
+  align-self: center; }
+
+.shadow {
+  text-shadow: 1px 1px 0 grey;
+  color: #421d63; }
+
+.flexcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.fill {
+  border-color: #7334ad;
+  background: none;
+  font-size: 15px;
+  padding: 10px;
+  color: white; }
+  .fill:hover {
+    box-shadow: inset 0 0 0 2em #7334ad;
+    color: #ffffff;
+    transition: 0.25s; }
+  .fill:focus {
+    box-shadow: inset 0 0 0 2em #7334ad;
+    color: #ffffff;
+    transition: 0.25s; }
+
+.centrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: end; }
+  .centrar img {
+    width: 300px;
+    height: 300px; }
+
+.colorcard {
+  background-color: rgba(209, 206, 206, 0.137) !important;
+  color: white; }
+
+.tamaño {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px; }
+
+/*  Variables */
+/* Colors */
+/*MAPS*/
+.primary {
+  color: white; }
+
+.secondary {
+  color: #a152eb; }
+
+.opcional {
+  color: black; }
+
+/* Font Size */
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -97,6 +183,42 @@ button {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
 
 /* RESPONSIVE: */
 @media only screen and (max-width: 850px) {
@@ -250,9 +372,9 @@ button {
 /* MENU */
 .menu {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1px;
   list-style: none;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 30px; }
@@ -268,13 +390,20 @@ button {
   background-color: rgba(161, 82, 235, 0.596);
   transform: translateX(5px); }
 
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
 /* FOOTER */
+.letra, .footerfonts {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 .footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  font-size: 12px;
+  font-size: 15px;
   color: white; }
 
 /*IMPORTS PAGES*/
@@ -284,68 +413,64 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 120px 120px 120px 120px;
   gap: 10px; }
-
-.astrologia__signos {
-  color: black;
-  text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif;
-  display: flex;
-  flex-direction: column;
-  padding: 5px; }
-  .astrologia__signos:hover {
-    transform: translateX(5px); }
+  .astrologiasignos {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center; }
+    .astrologiasignos:hover {
+      transform: translateX(5px); }
 
 .astrologia__simbolo {
   width: 60px;
   align-self: center; }
 
-.astrologia__signos:nth-of-type(1) {
-  background-image: linear-gradient(to bottom right, #cfcbd2ab, #cb98edab, #8b63daab, #3c21b7ab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(2) {
-  background-image: linear-gradient(to bottom right, rgba(111, 36, 161, 0.603), rgba(185, 159, 184, 0.603));
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(3) {
-  background-image: linear-gradient(to bottom right, rgba(100, 197, 236, 0.603), rgba(218, 88, 212, 0.603));
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(4) {
-  background-image: linear-gradient(to bottom right, #abf8e7ab, #8678c7ab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(5) {
-  background-image: linear-gradient(to bottom right, #6d678eab, #f6b5ccab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(6) {
-  background-image: linear-gradient(to bottom right, #a8c0edab, #221185ab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(7) {
-  background-image: linear-gradient(to bottom right, #0c7bb3ab, #f2bae8ab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(8) {
-  background-image: linear-gradient(to bottom right, #c0d5fbab, #fa5eb4ab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(9) {
-  background-image: linear-gradient(to bottom right, #9fa5d5ab, #a0f1eaab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(10) {
-  background-image: linear-gradient(to bottom right, #f4c4ecab, #6cc6cbab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(11) {
-  background-image: linear-gradient(to bottom right, #fec9c9ab, #6d678eab);
-  border-radius: 20px; }
-
-.astrologia__signos:nth-of-type(12) {
-  background-image: linear-gradient(to bottom right, #38a2d7ab, rgba(133, 45, 133, 0.623));
-  border-radius: 20px; }
+.astrologia__signos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center; }
+  .astrologia__signos:nth-of-type(1) {
+    background-image: linear-gradient(to bottom right, #cfcbd2ab, #cb98edab, #8b63daab, #3c21b7ab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(2) {
+    background-image: linear-gradient(to bottom right, rgba(111, 36, 161, 0.603), rgba(185, 159, 184, 0.603));
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(3) {
+    background-image: linear-gradient(to bottom right, rgba(100, 197, 236, 0.603), rgba(218, 88, 212, 0.603));
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(4) {
+    background-image: linear-gradient(to bottom right, #abf8e7ab, #8678c7ab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(5) {
+    background-image: linear-gradient(to bottom right, #6d678eab, #f6b5ccab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(6) {
+    background-image: linear-gradient(to bottom right, #a8c0edab, #221185ab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(7) {
+    background-image: linear-gradient(to bottom right, #0c7bb3ab, #f2bae8ab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(8) {
+    background-image: linear-gradient(to bottom right, #c0d5fbab, #fa5eb4ab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(9) {
+    background-image: linear-gradient(to bottom right, #9fa5d5ab, #a0f1eaab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(10) {
+    background-image: linear-gradient(to bottom right, #f4c4ecab, #6cc6cbab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(11) {
+    background-image: linear-gradient(to bottom right, #fec9c9ab, #6d678eab);
+    border-radius: 20px; }
+  .astrologia__signos:nth-of-type(12) {
+    background-image: linear-gradient(to bottom right, #38a2d7ab, rgba(133, 45, 133, 0.623));
+    border-radius: 20px; }
 
 /* PAGINA PLANETAS */
 .gridplanetas {
@@ -433,6 +558,14 @@ button {
     -webkit-animation: rotate-center 40s;
     animation: rotate-center 40s; }
 
+.centrados {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #cae2de6b;
+  border-radius: 20px;
+  margin: 0 auto; }
+
 /* PAGINA TAROT */
 .gridcartas {
   display: flex;
@@ -451,3 +584,19 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+
+/* FORMULARIO */
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 5px solid #a152eb;
+  border-radius: 20px;
+  color: white; }
+
+.formaformulario {
+  list-style: none;
+  display: grid;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-around; }

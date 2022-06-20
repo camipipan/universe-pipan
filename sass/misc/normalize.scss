@@ -1,8 +1,3 @@
-/*body {
-    background-image: url(./../../multimedia/galaxia.gif);
-}
-*/
-
 button {
     margin: 20px;
 }
@@ -94,4 +89,94 @@ button {
         width: 0%;
         height: .1px;
     }
+}
+
+.titulo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(161, 82, 235);
+}
+
+.subtitulo {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.colortema {
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: rgb(161, 82, 235);
+    text-align: center;
+}
+
+.colorparrafo {
+    font-size: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.mirror {
+    box-shadow: 0 8px 32px 0 grey;
+    backdrop-filter: blur( 2px);
+    -webkit-backdrop-filter: blur( 2px);
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    width: 400px;
+    align-self: center;
+}
+
+.shadow {
+    text-shadow: 1px 1px 0 grey;
+    color: rgb(66, 29, 99);
+}
+
+.flexcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fill {
+    &:hover {
+        box-shadow: inset 0 0 0 2em rgb(115, 52, 173);
+        color: #ffffff;
+        transition: 0.25s;
+    }
+    &:focus {
+        box-shadow: inset 0 0 0 2em rgb(115, 52, 173);
+        color: #ffffff;
+        transition: 0.25s;
+    }
+    border-color: rgb(115, 52, 173);
+    background: none;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: end;
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.colorcard {
+    background-color: rgba(209, 206, 206, 0.137) !important;
+    color: white;
+}
+
+.tamaño {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
 }

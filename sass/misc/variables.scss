@@ -6,7 +6,7 @@
 
 /*MAPS*/
 
-$colors: ( primary: white, secondary: rgba(161, 82, 235), opcional: black, );
+$colors: ( primary: white, secondary: rgb(161, 82, 235), opcional: black, );
 @each $colors,
 $value in $colors {
     .#{$colors} {
