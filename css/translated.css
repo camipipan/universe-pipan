@@ -1,6 +1,145 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap");
 /*IMPORT MISC*/
+/* RESPONSIVE: */
+@media only screen and (max-width: 850px) {
+  .gridplanetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 12; }
+    .gridplanetas .sol {
+      height: 120px;
+      grid-column: 2 / 3;
+      grid-row: 1; }
+    .gridplanetas .mercurio {
+      height: 50px;
+      grid-column: 3 / 4;
+      grid-row: 2; }
+    .gridplanetas .venus {
+      height: 110px;
+      grid-column: 1 / 2;
+      grid-row: 3; }
+    .gridplanetas .tierra {
+      height: 110px;
+      grid-column: 2 / 3;
+      grid-row: 4; }
+    .gridplanetas .marte {
+      height: 90px;
+      grid-column: 3 / 4;
+      grid-row: 5; }
+    .gridplanetas .jupiter {
+      height: 130px;
+      grid-column: 1 / 2;
+      grid-row: 6; }
+    .gridplanetas .saturno {
+      height: 130px;
+      grid-column: 2 / 3;
+      grid-row: 7; }
+    .gridplanetas .urano {
+      height: 110px;
+      grid-column: 3 / 4;
+      grid-row: 8; }
+    .gridplanetas .neptuno {
+      height: 100px;
+      grid-column: 1 / 2;
+      grid-row: 9; }
+    .gridplanetas .pluton {
+      height: 25px;
+      grid-column: 2 / 3;
+      grid-row: 10; }
+  .menu__lista {
+    font-size: 18px; }
+  .main {
+    font-size: 10px; }
+  .simbolosigno {
+    width: 40px; }
+  .titulo {
+    font-size: 30px; }
+  .subtitulo {
+    font-size: 16px;
+    padding: 5px; }
+  .colortema {
+    font-size: 15px; }
+  .colorparrafo {
+    font-size: 10px; }
+  .shadow {
+    font-size: 20px; }
+  .footer {
+    font-size: 8px; }
+  .imagen {
+    width: 470px; } }
+
+@media only screen and (max-width: 480px) {
+  .gridplanetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 12; }
+    .gridplanetas .sol {
+      height: 80px;
+      grid-column: 2 / 3;
+      grid-row: 1; }
+    .gridplanetas .mercurio {
+      height: 20px;
+      grid-column: 3 / 4;
+      grid-row: 2; }
+    .gridplanetas .venus {
+      height: 70px;
+      grid-column: 1 / 2;
+      grid-row: 3; }
+    .gridplanetas .tierra {
+      height: 70px;
+      grid-column: 2 / 3;
+      grid-row: 4; }
+    .gridplanetas .marte {
+      height: 50px;
+      grid-column: 3 / 4;
+      grid-row: 5; }
+    .gridplanetas .jupiter {
+      height: 90px;
+      grid-column: 1 / 2;
+      grid-row: 6; }
+    .gridplanetas .saturno {
+      height: 90px;
+      grid-column: 2 / 3;
+      grid-row: 7; }
+    .gridplanetas .urano {
+      height: 70px;
+      grid-column: 3 / 4;
+      grid-row: 8; }
+    .gridplanetas .neptuno {
+      height: 60px;
+      grid-column: 1 / 2;
+      grid-row: 9; }
+    .gridplanetas .pluton {
+      height: 15px;
+      grid-column: 2 / 3;
+      grid-row: 10; }
+  .menu__lista {
+    font-size: 10px; }
+  .logo {
+    width: 150px; }
+  main {
+    font-size: 10px; }
+  .astrologia__simbolo {
+    width: 25px; }
+  .colortema {
+    font-size: 10px; }
+  .colorparrafo {
+    font-size: 8px; }
+  form {
+    width: 280px; }
+  .imagen {
+    width: 300px; }
+  .footer {
+    font-size: 5px; }
+  .card-title {
+    font-size: 15px; }
+  form {
+    margin: 0 auto;
+    width: 200px;
+    padding: 1em;
+    border: 3px solid; } }
+
 button {
   margin: 20px; }
 
@@ -219,145 +358,6 @@ button {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1; } }
-
-/* RESPONSIVE: */
-@media only screen and (max-width: 850px) {
-  .menu {
-    font-size: 15px; }
-  main {
-    font-size: 10px; }
-  .simbolosigno {
-    width: 40px; }
-  .titulo {
-    font-size: 30px; }
-  .subtitulo {
-    font-size: 16px;
-    padding: 5px; }
-  .colortema {
-    font-size: 15px; }
-  .colorparrafo {
-    font-size: 10px; }
-  .shadow {
-    font-size: 20px; }
-  .footer {
-    font-size: 8px; }
-  .imagen {
-    width: 470px; }
-  .gridplanetas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: 12; }
-  .sol {
-    height: 120px;
-    grid-column: 2 / 3;
-    grid-row: 1; }
-  .mercurio {
-    height: 50px;
-    grid-column: 3 / 4;
-    grid-row: 2; }
-  .venus {
-    height: 110px;
-    grid-column: 1 / 2;
-    grid-row: 3; }
-  .tierra {
-    height: 110px;
-    grid-column: 2 / 3;
-    grid-row: 4; }
-  .marte {
-    height: 90px;
-    grid-column: 3 / 4;
-    grid-row: 5; }
-  .jupiter {
-    height: 130px;
-    grid-column: 1 / 2;
-    grid-row: 6; }
-  .saturno {
-    height: 130px;
-    grid-column: 2 / 3;
-    grid-row: 7; }
-  .urano {
-    height: 110px;
-    grid-column: 3 / 4;
-    grid-row: 8; }
-  .neptuno {
-    height: 100px;
-    grid-column: 1 / 2;
-    grid-row: 9; }
-  .pluton {
-    height: 25px;
-    grid-column: 2 / 3;
-    grid-row: 10; } }
-
-@media only screen and (max-width: 480px) {
-  .menu {
-    font-size: 10px; }
-  .logo {
-    width: 150px; }
-  main {
-    font-size: 10px; }
-  .simbolosigno {
-    width: 25px; }
-  .colortema {
-    font-size: 10px; }
-  .colorparrafo {
-    font-size: 8px; }
-  form {
-    width: 280px; }
-  .imagen {
-    width: 300px; }
-  .footer {
-    font-size: 5px; }
-  .card-title {
-    font-size: 15px; }
-  .gridplanetas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: 12; }
-  .sol {
-    height: 80px;
-    grid-column: 2 / 3;
-    grid-row: 1; }
-  .mercurio {
-    height: 20px;
-    grid-column: 3 / 4;
-    grid-row: 2; }
-  .venus {
-    height: 70px;
-    grid-column: 1 / 2;
-    grid-row: 3; }
-  .tierra {
-    height: 70px;
-    grid-column: 2 / 3;
-    grid-row: 4; }
-  .marte {
-    height: 50px;
-    grid-column: 3 / 4;
-    grid-row: 5; }
-  .jupiter {
-    height: 90px;
-    grid-column: 1 / 2;
-    grid-row: 6; }
-  .saturno {
-    height: 90px;
-    grid-column: 2 / 3;
-    grid-row: 7; }
-  .urano {
-    height: 70px;
-    grid-column: 3 / 4;
-    grid-row: 8; }
-  .neptuno {
-    height: 60px;
-    grid-column: 1 / 2;
-    grid-row: 9; }
-  .pluton {
-    height: 15px;
-    grid-column: 2 / 3;
-    grid-row: 10; }
-  form {
-    margin: 0 auto;
-    width: 200px;
-    padding: 1em;
-    border: 3px solid; } }
 
 /*IMPORTS PARTIALS*/
 /* logo */
