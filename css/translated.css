@@ -140,6 +140,9 @@
     padding: 1em;
     border: 3px solid; } }
 
+body {
+  background-image: url(./../multimedia/galaxia.gif); }
+
 button {
   margin: 20px; }
 
